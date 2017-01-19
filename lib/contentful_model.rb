@@ -2,6 +2,7 @@ require 'contentful/management'
 require 'contentful'
 
 require "active_support/all"
+Dir[File.expand_path "./**/*.rb"].each{|f| require_relative f }
 
 module ContentfulModel
   class << self
