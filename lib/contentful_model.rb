@@ -2,9 +2,7 @@ require 'contentful/management'
 require 'contentful'
 
 require "active_support/all"
-Dir[File.expand_path(File.join(File.dirname(File.absolute_path(__FILE__)), '.')) + "../**/*.rb"].each do |file|
-    require file
-end
+Dir["#{File.dirname(__FILE__)}/**/*.rb"].each {|file| require file }
 
 module ContentfulModel
   class << self
