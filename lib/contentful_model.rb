@@ -1,7 +1,5 @@
-require 'require_all'
 require 'contentful/management'
 require 'contentful'
-require_rel '.'
 
 require "active_support/all"
 
